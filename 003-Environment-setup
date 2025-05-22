@@ -1,0 +1,117 @@
+# Setting Up Your Environment I
+
+**Date Completed**: 13/05/2025
+**Module**: Setting Up Your Environment I
+**Practices Completed**: 19/19 (Setting up Your Computer: 6/6, Getting to Know Your Computer: 7/7, Intro to Source Control: 6/6)
+
+## Key Concepts Learned
+
+### Setting up Your Computer
+- **Development Environment**: Installing essential tools like VS Code, Node.js, and Git
+- **Terminal/Command Line**: Understanding basic navigation and file system operations
+- **Package Managers**: Introduction to npm and managing JavaScript dependencies
+- **Code Editor Configuration**: Setting up VS Code with extensions that enhance productivity
+- **System Requirements**: Understanding hardware and software prerequisites for development
+
+### Getting to Know Your Computer
+- **File System Navigation**: Understanding directory structures and path concepts (absolute vs relative)
+- **Command Line Proficiency**: Essential commands for file creation, deletion, navigation, and manipulation
+- **Process Management**: Understanding how programs run and interact with the operating system
+- **Permissions and Security**: Basic concepts of file permissions and system access controls
+- **Keyboard Shortcuts**: Efficiency techniques for faster navigation and coding
+
+### Intro to Source Control
+- **Version Control Concepts**: Understanding why source control is essential for development
+- **Git Fundamentals**: Basic workflow of add, commit, and status commands
+- **Repository Management**: Creating and cloning repositories, understanding working directory vs staging area
+- **Commit Best Practices**: Writing meaningful commit messages and creating logical changesets
+- **Git History**: Understanding how to view and navigate project history
+
+## Practical Applications
+
+**Development Workflow:**
+- Set up a consistent development environment that can be replicated across different machines
+- Created efficient file organization systems for projects and learning materials
+- Established command line muscle memory for faster development iterations
+
+**Version Control Integration:**
+- Implementing daily commit habits to track learning progress and code changes
+- Using Git to experiment with code safely, knowing previous versions are preserved
+- Building foundation for collaborative development and open source contributions
+
+**System Mastery:**
+- Troubleshooting common development environment issues independently
+- Understanding how different tools in the development stack interact with each other
+- Creating reproducible setups for consistent development experiences
+
+## Code Examples
+
+**Essential Command Line Operations:**
+```bash
+# Navigation and file management
+pwd                    # Print working directory
+ls -la                # List files with details
+cd path/to/directory   # Change directory
+mkdir new-folder       # Create directory
+touch new-file.js      # Create empty file
+rm file.js            # Remove file
+cp source dest        # Copy file
+
+# Git workflow
+git init              # Initialize repository
+git add .             # Stage all changes
+git commit -m "Initial commit"  # Commit with message
+git status            # Check repository status
+git log --oneline     # View commit history
+```
+
+**VS Code Configuration Example:**
+```json
+{
+    "editor.fontSize": 14,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.fontSize": 12
+}
+```
+
+## Connections to Previous Learning
+
+The problem-solving methodology from Module 1 applies directly to environment setup:
+- **Decomposition**: Breaking setup into discrete steps (install tool, configure, test, move to next)
+- **Testing and Validation**: Verifying each tool works correctly before proceeding
+- **Documentation**: Recording configuration choices and troubleshooting steps for future reference
+
+The JavaScript fundamentals from Module 2 now have a proper environment for execution and experimentation, moving from theoretical understanding to practical application.
+
+## Questions and Reflections
+
+**Key Insights:**
+- A well-configured development environment dramatically improves learning efficiency and reduces friction
+- Command line proficiency is not optional for serious development work - it becomes second nature with practice
+- Version control is not just for teams - it's valuable for individual learning and experimentation
+
+**Initial Challenges:**
+- Overcoming intimidation factor of command line interfaces
+- Understanding the relationship between different development tools
+- Learning keyboard shortcuts and developing muscle memory for common operations
+
+**Environment Decisions Made:**
+- Choice of shell (bash/zsh) and customization level
+- VS Code extensions that enhance JavaScript development
+- Git configuration preferences for commit authoring and display
+
+## Next Steps
+
+This environment foundation enables:
+- **HTML & CSS Development**: Tools are now in place for front-end development
+- **JavaScript Projects**: Node.js installation allows for local JavaScript execution and npm package usage
+- **Version Control Workflow**: Git skills will be essential for tracking all future projects and learning
+- **Professional Development**: Environment setup mirrors industry standards for easier transition to professional work
+
+The combination of command line proficiency, code editor mastery, and version control creates the foundation for efficient development workflows throughout the remainder of the curriculum.
+
+---
+
+*Development environment configured and version control workflow established - ready for front-end development.*
