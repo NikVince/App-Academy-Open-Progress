@@ -1,0 +1,87 @@
+# Getting Started at App Academy
+
+**Date Completed**: 12/05/2025
+**Module**: Web Development Fundamentals
+**Practices Completed**: 10/10 (Learning at App Academy: 6/6, Introduction to Problem Solving I: 4/4)
+
+## Key Concepts Learned
+
+### Learning at App Academy
+- **Active Learning Philosophy**: App Academy emphasizes hands-on practice over passive consumption of content
+- **Spaced Repetition**: Concepts are revisited and built upon throughout the curriculum to reinforce understanding
+- **Problem-Solving Mindset**: Focus on breaking down complex problems into smaller, manageable components
+- **Community-Driven Learning**: Utilizing Discord and peer support as integral parts of the learning process
+- **Growth Mindset**: Embracing mistakes and debugging as essential parts of the learning journey
+
+### Introduction to Problem Solving I
+- **Decomposition**: Breaking large problems into smaller, more manageable sub-problems
+- **Pattern Recognition**: Identifying similarities between current problems and previously solved ones
+- **Abstraction**: Focusing on essential features while ignoring irrelevant details
+- **Algorithm Design**: Creating step-by-step procedures to solve problems systematically
+- **Testing and Validation**: Verifying solutions work correctly across different scenarios
+
+## Practical Applications
+
+**Learning Strategies Applied:**
+- Established daily learning routines and consistent practice schedules
+- Set up systems for tracking progress and identifying areas needing reinforcement
+- Developed note-taking methods that encourage active engagement with material
+
+**Problem-Solving Framework:**
+- Read problems carefully and identify what exactly is being asked
+- Break complex requirements into smaller, testable components
+- Work through examples manually before writing code
+- Test solutions with edge cases and boundary conditions
+
+## Code Examples
+
+*Note: This foundational module focused on learning methodology rather than specific coding implementations*
+
+**Problem-Solving Process Example:**
+```
+1. Understand the Problem
+   - What are the inputs?
+   - What should the output be?
+   - Are there any constraints or edge cases?
+
+2. Plan the Solution
+   - What steps are needed?
+   - Can I break this into smaller problems?
+   - Have I solved something similar before?
+
+3. Implement and Test
+   - Write the solution step by step
+   - Test with provided examples
+   - Consider edge cases
+   - Debug and refine as needed
+```
+
+## Connections to Previous Learning
+
+This foundational module establishes the learning framework that supports all subsequent technical content. The problem-solving methodology introduced here becomes the backbone for approaching JavaScript functions, HTML structure, CSS styling challenges, and eventually full-stack development problems.
+
+## Questions and Reflections
+
+**Key Insights:**
+- Learning to code effectively requires as much focus on *how* to learn as *what* to learn
+- The debugging mindset is actually a strength - errors provide valuable information about how to improve
+- Breaking problems down systematically is a skill that improves with deliberate practice
+
+**Areas for Continued Growth:**
+- Developing patience with the learning process during challenging concepts
+- Building confidence in approaching unfamiliar problems
+- Strengthening ability to explain solutions clearly to others
+
+## Next Steps
+
+This module prepares for diving into JavaScript fundamentals with a solid foundation in:
+- Structured problem-solving approaches
+- Active learning techniques
+- Community engagement strategies
+- Growth mindset principles
+
+The problem-solving framework established here will be immediately applied to JavaScript data types, functions, and control flow in upcoming modules.
+
+---
+
+*Foundation established for systematic learning and problem-solving in software development.*
