@@ -1,0 +1,183 @@
+# HTML & CSS Fundamentals
+
+**Date Completed**: 14/05/2025
+**Module**: HTML & CSS Fundamentals
+**Practices Completed**: 21/21 (Problem Solving: 3/3, HTML Basics: 12/12, CSS Basics: 6/6)
+
+## Key Concepts Learned
+
+### Problem Solving (Web Context)
+- **Visual Problem Decomposition**: Breaking down visual designs into HTML structure and CSS styling components
+- **Content vs Presentation**: Understanding the separation between HTML (structure/content) and CSS (presentation/styling)
+- **Design Analysis**: Looking at websites and identifying the underlying HTML elements and CSS properties used
+- **Mobile-First Thinking**: Considering how designs should work across different screen sizes from the start
+- **Accessibility Considerations**: Ensuring web content is usable by people with diverse abilities and technologies
+
+### HTML Basics
+- **Semantic Markup**: Using elements that convey meaning (header, nav, main, article, section, footer)
+- **Document Structure**: Understanding DOCTYPE, html, head, and body elements and their purposes
+- **Text Elements**: Headings (h1-h6), paragraphs, lists (ol, ul, li), and inline formatting (strong, em, span)
+- **Links and Navigation**: Anchor elements, relative vs absolute URLs, and creating intuitive navigation
+- **Images and Media**: img elements with proper alt text, understanding src attributes and responsive images
+- **HTML Validation**: Writing valid, well-formed HTML that follows web standards
+
+### CSS Basics
+- **Selectors and Specificity**: Element, class, ID selectors and understanding which styles take precedence
+- **Box Model**: Content, padding, border, margin and how they affect element sizing and spacing
+- **Typography**: Font properties, text styling, and creating readable, attractive text presentations
+- **Colors and Backgrounds**: Color values (hex, rgb, named), background properties, and visual contrast
+- **Layout Fundamentals**: Block vs inline elements, basic positioning, and element flow
+- **CSS Organization**: Writing maintainable CSS with consistent naming and logical structure
+
+## Practical Applications
+
+**Semantic HTML Structure:**
+- Created well-structured web pages that screen readers and search engines can easily parse
+- Built navigation systems that are intuitive and accessible
+- Organized content hierarchically using appropriate heading levels and sectioning elements
+
+**Visual Design Implementation:**
+- Translated visual designs into CSS code that matches intended appearance
+- Created responsive layouts that work across different screen sizes
+- Implemented consistent visual styling systems using CSS variables and reusable classes
+
+**Performance and Accessibility:**
+- Optimized images with appropriate alt text and file sizes
+- Wrote CSS that loads efficiently and doesn't block page rendering
+- Ensured color contrast and typography choices support readability
+
+## Code Examples
+
+**Semantic HTML Structure:**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jane Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Welcome to my portfolio...</p>
+        </section>
+        
+        <section id="projects">
+            <h2>My Projects</h2>
+            <article>
+                <h3>Project Name</h3>
+                <p>Project description...</p>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Jane Developer</p>
+    </footer>
+</body>
+</html>
+```
+
+**CSS Layout and Styling:**
+```css
+/* CSS Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0056b3;
+}
+
+/* Layout */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+```
+
+## Connections to Previous Learning
+
+**JavaScript Integration:**
+- HTML provides the structure that JavaScript will manipulate in future modules
+- CSS classes and IDs become targets for JavaScript DOM manipulation
+- Understanding HTML elements and their properties is essential for dynamic web applications
+
+**Development Workflow:**
+- Version control skills from Module 3 are essential for tracking changes to HTML and CSS files
+- Command line tools help with file organization and project management
+- Code editor features enhance HTML and CSS development efficiency
+
+**Problem-Solving Application:**
+- Visual problem decomposition builds on general problem-solving skills from Module 1
+- Breaking designs into components mirrors function decomposition from JavaScript modules
+
+## Questions and Reflections
+
+**Key Insights:**
+- Semantic HTML is not just about correctness - it fundamentally improves accessibility, SEO, and maintainability
+- CSS specificity and the cascade require strategic thinking about code organization and architecture
+- The separation of content and presentation creates more flexible, maintainable web applications
+
+**Design Challenges:**
+- Translating visual designs into code requires both technical skills and design intuition
+- Cross-browser compatibility and responsive design add complexity layers to consider
+- Balancing visual appeal with performance and accessibility requires careful trade-offs
+
+**Areas for Continued Growth:**
+- Developing intuition for CSS layout solutions and debugging techniques
+- Building design systems that scale across multiple pages and components
+- Understanding modern CSS features and when to use them vs fallback approaches
+
+## Next Steps
+
+This HTML and CSS foundation prepares for:
+- **Intermediate HTML & CSS**: Forms, advanced layouts, and responsive design patterns
+- **JavaScript DOM Manipulation**: Using JavaScript to dynamically modify HTML and CSS
+- **Front-end Frameworks**: Understanding how modern tools build upon these fundamentals
+- **Full-stack Development**: Creating the front-end interfaces that connect to back-end services
+
+The combination of semantic HTML and well-organized CSS creates the visual layer that users interact with in all web applications.
+
+---
+
+*Front-end fundamentals established - ready for advanced HTML/CSS techniques and JavaScript integration.*
