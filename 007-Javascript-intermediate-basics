@@ -1,0 +1,228 @@
+# Intermediate JavaScript (Basics)
+
+**Date Completed**: 17/05/2025
+**Module**: Intermediate JavaScript
+**Practices Completed**: 12/12 (Getting Started with Node: 5/5, Local JavaScript Practice: 1/1, Refactoring JavaScript Practice: 4/4, HTML/CSS Unit Tests: 2/2)
+
+## Key Concepts Learned
+
+### Getting Started with Node
+- **Runtime Environment**: Understanding how Node.js allows JavaScript execution outside the browser
+- **Module System**: CommonJS modules with require() and module.exports for code organization
+- **Package Management**: Using npm to install, manage, and update JavaScript packages and dependencies
+- **Script Execution**: Running JavaScript files from the command line and understanding the Node.js execution context
+- **File System Operations**: Reading and writing files using Node.js built-in modules
+- **Process and Environment**: Accessing command line arguments and environment variables in Node.js applications
+
+### Local JavaScript Practice
+- **Development Workflow**: Setting up local JavaScript projects with proper file structure and organization
+- **Debugging Techniques**: Using console.log effectively, Node.js debugger, and VS Code debugging tools
+- **Code Organization**: Separating concerns into multiple files and using modules for maintainable code architecture
+- **Testing Locally**: Running and verifying JavaScript code behavior in local development environment
+- **Project Structure**: Creating logical file and folder hierarchies for JavaScript applications
+- **Performance Monitoring**: Understanding how to measure and optimize JavaScript execution performance
+
+### Refactoring JavaScript Practice
+- **Code Quality**: Identifying opportunities to improve readability, maintainability, and performance
+- **Function Decomposition**: Breaking large functions into smaller, single-purpose functions
+- **DRY Principle**: Eliminating code duplication through abstraction and reusable functions
+- **Naming Conventions**: Using descriptive variable and function names that communicate intent clearly
+- **Code Organization**: Restructuring code for better logical flow and easier understanding
+- **Error Handling**: Adding robust error checking and graceful failure handling to existing code
+
+### HTML/CSS Unit Tests
+- **Test-Driven Development**: Understanding how tests guide and validate code implementation
+- **Assertion Basics**: Writing tests that verify expected behavior and catch regressions
+- **Test Structure**: Organizing tests with clear setup, execution, and verification phases
+- **Integration Testing**: Testing how JavaScript interacts with HTML elements and CSS styling
+- **Automated Validation**: Using testing frameworks to ensure code quality and prevent bugs
+- **Documentation through Tests**: Tests as living documentation that explains code behavior
+
+## Practical Applications
+
+**Node.js Development Environment:**
+- Set up local JavaScript projects that can run independently of browser environments
+- Created modular applications using require() to organize code across multiple files
+- Implemented command-line utilities that process data and generate outputs
+
+**Code Quality and Refactoring:**
+- Improved existing JavaScript code by extracting reusable functions and eliminating duplication
+- Applied consistent naming conventions and code organization patterns across projects
+- Added error handling to make applications more robust and user-friendly
+
+**Testing and Validation:**
+- Created test suites that verify JavaScript functionality and catch regressions during development
+- Implemented integration tests that ensure JavaScript works correctly with HTML and CSS
+- Used testing as a tool for understanding and documenting code behavior
+
+## Code Examples
+
+**Node.js Module System:**
+```javascript
+// math-utils.js - Utility module
+function add(a, b) {
+    return a + b;
+}
+
+function multiply(a, b) {
+    return a * b;
+}
+
+function calculateTax(amount, rate) {
+    if (typeof amount !== 'number' || typeof rate !== 'number') {
+        throw new Error('Both amount and rate must be numbers');
+    }
+    return multiply(amount, rate);
+}
+
+module.exports = {
+    add,
+    multiply,
+    calculateTax
+};
+
+// main.js - Main application
+const { add, calculateTax } = require('./math-utils');
+
+const subtotal = add(100, 50);
+const tax = calculateTax(subtotal, 0.08);
+const total = add(subtotal, tax);
+
+console.log(`Subtotal: $${subtotal}`);
+console.log(`Tax: $${tax.toFixed(2)}`);
+console.log(`Total: $${total.toFixed(2)}`);
+```
+
+**Refactored Code Example:**
+```javascript
+// Before refactoring - monolithic function
+function processUserData(userData) {
+    let result = "";
+    if (userData.name && userData.name.length > 0) {
+        result += "Name: " + userData.name.charAt(0).toUpperCase() + userData.name.slice(1).toLowerCase() + "\n";
+    }
+    if (userData.email && userData.email.includes("@")) {
+        result += "Email: " + userData.email.toLowerCase() + "\n";
+    }
+    if (userData.age && userData.age >= 18) {
+        result += "Age: " + userData.age + " (Adult)\n";
+    }
+    return result;
+}
+
+// After refactoring - modular, reusable functions
+function capitalizeFirst(str) {
+    if (!str || str.length === 0) return str;
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+}
+
+function isValidEmail(email) {
+    return email && email.includes("@");
+}
+
+function isAdult(age) {
+    return age && age >= 18;
+}
+
+function formatUserField(label, value) {
+    return `${label}: ${value}\n`;
+}
+
+function processUserData(userData) {
+    let result = "";
+    
+    if (userData.name) {
+        result += formatUserField("Name", capitalizeFirst(userData.name));
+    }
+    
+    if (isValidEmail(userData.email)) {
+        result += formatUserField("Email", userData.email.toLowerCase());
+    }
+    
+    if (isAdult(userData.age)) {
+        result += formatUserField("Age", `${userData.age} (Adult)`);
+    }
+    
+    return result;
+}
+```
+
+**Basic Test Example:**
+```javascript
+// test-math-utils.js
+const { add, multiply, calculateTax } = require('./math-utils');
+
+function testAdd() {
+    const result = add(2, 3);
+    if (result === 5) {
+        console.log('✓ add function works correctly');
+    } else {
+        console.log('✗ add function failed - expected 5, got', result);
+    }
+}
+
+function testCalculateTax() {
+    try {
+        const result = calculateTax(100, 0.08);
+        if (result === 8) {
+            console.log('✓ calculateTax function works correctly');
+        } else {
+            console.log('✗ calculateTax function failed - expected 8, got', result);
+        }
+    } catch (error) {
+        console.log('✗ calculateTax function threw error:', error.message);
+    }
+}
+
+// Run tests
+testAdd();
+testCalculateTax();
+```
+
+## Connections to Previous Learning
+
+**Building on JavaScript Fundamentals:**
+- Node.js provides the execution environment for applying JavaScript concepts in real projects
+- Module system enables better organization of the functions and control flow learned in earlier modules
+- Local development workflow enhances the environment setup skills from previous modules
+
+**Preparing for Full-Stack Development:**
+- Node.js skills are essential for back-end JavaScript development
+- Testing concepts prepare for more complex application development and maintenance
+- Code organization patterns scale to larger applications and team development
+
+**Professional Development Practices:**
+- Refactoring skills improve code quality and maintainability in all future projects
+- Testing provides confidence when making changes and adding features
+- Module system demonstrates software engineering principles of separation of concerns
+
+## Questions and Reflections
+
+**Key Insights:**
+- Node.js transforms JavaScript from a browser-only language into a full development platform
+- Good code organization and refactoring practices are as important as getting code to work initially
+- Testing is not overhead - it's an investment that pays dividends throughout the development process
+
+**Development Workflow Improvements:**
+- Local JavaScript execution enables faster iteration and debugging cycles
+- Module system reduces code duplication and improves project maintainability
+- Testing provides confidence to make changes and refactor code without fear of breaking functionality
+
+**Professional Skills Development:**
+- Refactoring teaches critical evaluation of existing code and identification of improvement opportunities
+- Testing mindset improves code design by forcing consideration of edge cases and error conditions
+- Node.js development environment mirrors professional JavaScript development workflows
+
+## Next Steps
+
+This intermediate JavaScript foundation prepares for:
+- **Advanced JavaScript Concepts**: Arrays, objects, higher-order functions, and asynchronous programming
+- **Full-Stack Development**: Using Node.js for server-side applications and API development
+- **Modern JavaScript Frameworks**: Understanding how React, Vue, or Angular build upon these fundamentals
+- **Professional Development**: Contributing to larger codebases with confidence in testing and refactoring skills
+
+The combination of Node.js proficiency, code quality awareness, and testing fundamentals creates the foundation for professional JavaScript development.
+
+---
+
+*Node.js development environment established and code quality practices implemented - ready for advanced JavaScript concepts.*
