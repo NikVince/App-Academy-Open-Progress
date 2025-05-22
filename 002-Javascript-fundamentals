@@ -1,0 +1,121 @@
+# JavaScript Fundamentals (Basics)
+
+**Date Completed**: 12/05/2025
+**Module**: Web Development Fundamentals
+**Practices Completed**: 55/55 (Data Types: 19/19, Intro to Functions: 17/17, Control Flow: 19/19)
+
+## Key Concepts Learned
+
+### Data Types
+- **Primitive Types**: Numbers, strings, booleans, undefined, null
+- **Type Coercion**: How JavaScript automatically converts between types and when this can cause unexpected behavior
+- **String Manipulation**: Concatenation, template literals, and basic string methods
+- **Number Operations**: Arithmetic operators, Math object methods, and handling decimal precision
+- **Boolean Logic**: Truthy/falsy values and logical operators (&&, ||, !)
+
+### Introduction to Functions
+- **Function Declaration vs Expression**: Understanding different ways to create functions and when to use each
+- **Parameters and Arguments**: How data flows into functions and the difference between these concepts
+- **Return Values**: How functions output data and the importance of explicit returns
+- **Scope Basics**: Introduction to global vs local scope and variable accessibility
+- **Function Invocation**: Different ways to call functions and understanding execution context
+
+### Control Flow
+- **Conditional Statements**: if/else chains, switch statements, and ternary operators
+- **Comparison Operators**: Equality vs strict equality (== vs ===) and relational comparisons
+- **Logical Flow**: Building complex conditions using logical operators
+- **Decision Trees**: Mapping out different execution paths through conditional logic
+- **Code Organization**: Structuring conditional logic for readability and maintainability
+
+## Practical Applications
+
+**Data Type Mastery:**
+- Building user input validation systems that handle different data types appropriately
+- Creating dynamic content where string manipulation and number calculations work together
+- Understanding when type coercion helps vs when it creates bugs
+
+**Function Design:**
+- Writing reusable code blocks that accept inputs and produce predictable outputs
+- Creating functions with single responsibilities that can be combined for complex behavior
+- Building abstractions that hide implementation details behind clear interfaces
+
+**Control Flow Implementation:**
+- Creating interactive applications that respond differently based on user choices
+- Building validation logic that guides users through forms and interfaces
+- Implementing business logic that handles multiple scenarios and edge cases
+
+## Code Examples
+
+**Function with Type Checking:**
+```javascript
+function calculateTip(billAmount, tipPercentage) {
+    // Input validation
+    if (typeof billAmount !== 'number' || typeof tipPercentage !== 'number') {
+        return 'Invalid input: both arguments must be numbers';
+    }
+    
+    // Business logic
+    if (billAmount <= 0) {
+        return 'Bill amount must be positive';
+    }
+    
+    return billAmount * (tipPercentage / 100);
+}
+```
+
+**Complex Conditional Logic:**
+```javascript
+function getGrade(score) {
+    if (score >= 90) {
+        return 'A';
+    } else if (score >= 80) {
+        return 'B';
+    } else if (score >= 70) {
+        return 'C';
+    } else if (score >= 60) {
+        return 'D';
+    } else {
+        return 'F';
+    }
+}
+```
+
+## Connections to Previous Learning
+
+The problem-solving methodology from the previous module directly applies here:
+- **Decomposition**: Breaking function requirements into input processing, logic, and output
+- **Pattern Recognition**: Seeing how similar conditional structures solve different problems
+- **Testing**: Validating functions work correctly with various inputs including edge cases
+
+These JavaScript fundamentals create the building blocks for everything that follows - HTML manipulation, CSS styling through JavaScript, and eventually full-stack applications.
+
+## Questions and Reflections
+
+**Key Insights:**
+- JavaScript's flexibility with types can be both powerful and dangerous - understanding when to embrace vs control this flexibility is crucial
+- Functions are not just code organization tools but fundamental building blocks for creating abstractions
+- Conditional logic is everywhere in programming - mastering clean, readable conditionals pays dividends
+
+**Challenging Concepts:**
+- Understanding when type coercion happens automatically and how to predict its behavior
+- Grasping scope rules and how variables are accessible in different contexts
+- Writing conditionals that handle all possible cases without becoming overly complex
+
+**Areas for Continued Practice:**
+- Building more complex functions that combine multiple concepts
+- Creating robust input validation that handles unexpected data gracefully
+- Developing intuition for when to use different conditional structures
+
+## Next Steps
+
+This module establishes the core JavaScript knowledge needed for:
+- Setting up development environments and working with Node.js
+- Manipulating HTML and CSS through JavaScript
+- Building interactive web applications
+- Understanding more advanced JavaScript concepts like arrays, objects, and higher-order functions
+
+The combination of data types, functions, and control flow provides the foundation for all programming logic in web development.
+
+---
+
+*Core JavaScript fundamentals mastered - ready for environment setup and practical application.*
