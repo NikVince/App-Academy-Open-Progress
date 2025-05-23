@@ -2,11 +2,44 @@
 
 ![Learning Progress](https://img.shields.io/badge/Progress-In%20Progress-yellow)
 ![Curriculum](https://img.shields.io/badge/Curriculum-App%20Academy%20Open-blue)
-![Language](https://img.shields.io/badge/Language-JavaScript-F7DF1E?logo=javascript&logoColor=black)
+
+## Frontend Technologies
+![JavaScript](https://img.shields.io/badge/Language-JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![React](https://img.shields.io/badge/Frontend-React-61DAFB?logo=react&logoColor=black)
-![Framework](https://img.shields.io/badge/Frontend-HTML%2FCSS-E34F26?logo=html5&logoColor=white)
-![Tools](https://img.shields.io/badge/Tools-Node.js-339933?logo=node.js&logoColor=white)
-![Version Control](https://img.shields.io/badge/VCS-Git-F05032?logo=git&logoColor=white)
+![Redux](https://img.shields.io/badge/State-Redux-764ABC?logo=redux&logoColor=white)
+![HTML/CSS](https://img.shields.io/badge/Frontend-HTML%2FCSS-E34F26?logo=html5&logoColor=white)
+![WebSockets](https://img.shields.io/badge/Realtime-WebSockets-010101?logo=socketdotio&logoColor=white)
+
+## Backend Technologies
+![Node.js](https://img.shields.io/badge/Runtime-Node.js-339933?logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Framework-Express.js-000000?logo=express&logoColor=white)
+![Python](https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Framework-Flask-000000?logo=flask&logoColor=white)
+![Ruby on Rails](https://img.shields.io/badge/Framework-Ruby%20on%20Rails-CC0000?logo=rubyonrails&logoColor=white)
+
+## Database Technologies
+![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-336791?logo=postgresql&logoColor=white)
+![SQL](https://img.shields.io/badge/Query-SQL-4479A1?logo=postgresql&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/ORM-SQLAlchemy-D71F00?logo=sqlalchemy&logoColor=white)
+![Sequelize](https://img.shields.io/badge/ORM-Sequelize-52B0E7?logo=sequelize&logoColor=white)
+
+## Development Tools & Deployment
+![Git](https://img.shields.io/badge/VCS-Git-F05032?logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/Platform-GitHub-181717?logo=github&logoColor=white)
+![npm](https://img.shields.io/badge/Package-npm-CB3837?logo=npm&logoColor=white)
+![Webpack](https://img.shields.io/badge/Bundler-Webpack-8DD6F9?logo=webpack&logoColor=black)
+![Docker](https://img.shields.io/badge/Container-Docker-2496ED?logo=docker&logoColor=white)
+
+## Deployment & Hosting
+![Heroku](https://img.shields.io/badge/Platform-Heroku-430098?logo=heroku&logoColor=white)
+![Netlify](https://img.shields.io/badge/Platform-Netlify-00C7B7?logo=netlify&logoColor=white)
+
+## Additional Technologies
+![REST API](https://img.shields.io/badge/API-REST-FF6C37?logo=postman&logoColor=white)
+![JSON](https://img.shields.io/badge/Format-JSON-000000?logo=json&logoColor=white)
+![AI Integration](https://img.shields.io/badge/AI-Integration-FF6B6B?logo=openai&logoColor=white)
+![Algorithms](https://img.shields.io/badge/CS-Algorithms-8B5CF6?logo=codecogs&logoColor=white)
+
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 > **A comprehensive documentation of my software engineering learning journey through App Academy Open's outcome-driven curriculum.**
@@ -61,12 +94,26 @@ Documents follow a systematic naming pattern for easy navigation:
 
 This repository tracks progression through the complete App Academy Open curriculum, including:
 
-- **Programming Fundamentals**: JavaScript, data types, functions, control flow
-- **Web Development**: HTML, CSS, responsive design, accessibility
-- **Advanced JavaScript**: Objects, arrays, functional programming, algorithms
-- **Development Tools**: Git, GitHub, Node.js, command line proficiency
-- **Problem Solving**: Algorithmic thinking, debugging, code optimization
-- **Software Engineering**: Code organization, testing, refactoring, documentation
+### **Programming Fundamentals**
+JavaScript fundamentals, data types, functions, control flow, object-oriented programming, and algorithmic thinking
+
+### **Frontend Development**
+HTML5 semantic markup, CSS3 styling and animations, responsive design, React component architecture, Redux state management, and modern JavaScript (ES6+)
+
+### **Backend Development**
+Node.js runtime, Express.js server framework, RESTful API design, Python programming, Flask web framework, and Ruby on Rails full-stack development
+
+### **Database Management**
+SQL query design, PostgreSQL administration, database modeling, SQLAlchemy ORM (Python), Sequelize ORM (JavaScript), and data persistence strategies
+
+### **Development Tools & Workflow**
+Git version control, GitHub collaboration, npm package management, Webpack bundling, Docker containerization, and modern development workflows
+
+### **Deployment & DevOps**
+Heroku platform deployment, Netlify static hosting, environment configuration, and production deployment strategies
+
+### **Advanced Concepts**
+WebSocket real-time communication, AI integration patterns, data structures and algorithms, system design, and software engineering best practices
 
 *As the curriculum expands and evolves, this documentation grows to reflect new skills and technologies.*
 
@@ -135,25 +182,4 @@ Skills developed and documented here prepare for:
 ### Technical Standards
 - **Markdown Best Practices**: Proper formatting, linking, and structure
 - **Code Quality**: Well-commented examples with clear explanations
-- **Version Control**: Meaningful commit messages and logical change organization
-- **Accessibility**: Clear headings and structure for easy navigation
-
-## 🎓 Outcomes and Goals
-
-### Immediate Benefits
-- **Reinforced Learning**: Writing explanations solidifies conceptual understanding
-- **Portfolio Development**: Professional documentation showcases technical communication skills
-- **Reference Creation**: Personal knowledge base accelerates future development work
-- **Habit Formation**: Daily documentation builds discipline essential for professional development
-
-### Long-term Impact
-- **Career Preparation**: Demonstrated self-learning ability and technical communication
-- **Knowledge Retention**: Written explanations provide lasting reference for continued growth
-- **Community Contribution**: Template and inspiration for other self-directed learners
-- **Professional Network**: Connection point for collaborations and mentorship opportunities
-
----
-
-**🌟 This repository represents more than completed exercises—it's a testament to the power of deliberate practice, consistent effort, and the commitment to lifelong learning in software engineering.**
-
-*For questions, suggestions, or collaboration opportunities, feel free to open an issue or reach out through the contact methods in my profile.*
+- **Version Control**: Meaningful commit messages a
