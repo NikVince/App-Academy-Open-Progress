@@ -15,13 +15,11 @@
 ![Express.js](https://img.shields.io/badge/Framework-Express.js-000000?logo=express&logoColor=white)
 ![Python](https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Framework-Flask-000000?logo=flask&logoColor=white)
-![Ruby on Rails](https://img.shields.io/badge/Framework-Ruby%20on%20Rails-CC0000?logo=rubyonrails&logoColor=white)
 
 ## Database Technologies
 ![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-336791?logo=postgresql&logoColor=white)
 ![SQL](https://img.shields.io/badge/Query-SQL-4479A1?logo=postgresql&logoColor=white)
 ![SQLAlchemy](https://img.shields.io/badge/ORM-SQLAlchemy-D71F00?logo=sqlalchemy&logoColor=white)
-![Sequelize](https://img.shields.io/badge/ORM-Sequelize-52B0E7?logo=sequelize&logoColor=white)
 
 ## Development Tools & Deployment
 ![Git](https://img.shields.io/badge/VCS-Git-F05032?logo=git&logoColor=white)
